@@ -1,0 +1,71 @@
+{
+  "000010011": {
+    "accuracy": 8,
+    "completeness": 10.0,
+    "fluency": 9,
+    "prosodic": 9,
+    "words": [
+      {
+        "accuracy": 10,
+        "stress": 10,
+        "phones": [
+          "W",
+          "IY0"
+        ],
+        "total": 10,
+        "text": "WE",
+        "phones-accuracy": [
+          2.0,
+          2.0
+        ]
+      },
+      {
+        "accuracy": 10,
+        "stress": 10,
+        "phones": [
+          "K",
+          "AO0",
+          "L"
+        ],
+        "total": 10,
+        "text": "CALL",
+        "phones-accuracy": [
+          2.0,
+          1.8,
+          1.8
+        ]
+      },
+      {
+        "accuracy": 10,
+        "stress": 10,
+        "phones": [
+          "IH0",
+          "T"
+        ],
+        "total": 10,
+        "text": "IT",
+        "phones-accuracy": [
+          2.0,
+          2.0
+        ]
+      },
+      {
+        "accuracy": 6,
+        "stress": 10,
+        "phones": [
+          "B",
+          "EH0",
+          "R"
+        ],
+        "total": 6,
+        "text": "BEAR",
+        "phones-accuracy": [
+          2.0,
+          1.0,
+          1.0
+        ]
+      }
+    ],
+    "total": 8,
+    "text": "WE CALL IT BEAR"
+  }}

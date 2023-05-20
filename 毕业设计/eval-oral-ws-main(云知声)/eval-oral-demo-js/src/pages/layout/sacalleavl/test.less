@@ -1,0 +1,150 @@
+@import '../../../styles/var.less';
+.boxContainer {
+  max-width: 1200px;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+}
+.box {
+  max-width: 560px;
+  flex: 1 1 auto;
+}
+.borderBox {
+  border: 1px solid #393c44;
+  height: 360px;
+  background: #15192b;
+  position: relative;
+}
+.tabs {
+  display: flex;
+  border-bottom: 1px solid #393c44;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+.tab {
+  flex: 1 1 auto;
+  text-align: center;
+  font-size: 14px;
+  line-height: 40px;
+  height: 40px;
+  cursor: pointer;
+  color: #ffffff;
+}
+.tab + .tab {
+  border-left: 1px solid #393c44;
+}
+.tab.active {
+  background-color: @main-color;
+  color: #fff;
+}
+
+.micbox {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 320px;
+  position: relative;
+  padding: 0 20px;
+}
+.img {
+  width: 256px;
+  height: 200px;
+  background-image: url(../../../assets/mic.png);
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+.imgtext {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  color: #fff;
+  justify-content: center;
+  align-items: center;
+}
+
+.imgRecording {
+  width: 256px;
+  height: 256px;
+  background-image: url(../../../assets/icon_micwave.png);
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+.desc {
+  max-width: 355px;
+  color: rgba(255, 255, 255, 0.4);
+  text-align: center;
+}
+.result {
+  background-image: url(../../../assets/oneword/icon_voicewave.png);
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+.text {
+  color: #fff;
+  font-size: 16px;
+  margin-bottom: 16px;
+}
+
+.buttons {
+  height: 70px;
+  display: flex;
+  justify-content: space-between;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  padding: 24px;
+  color: #fff;
+  line-height: 32px;
+}
+.showRes {
+  width: 100%;
+  height: 100%;
+  background-color: #15192b;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  word-break: break-word;
+  padding: 24px;
+}
+.rstRow {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-bottom: 24px;
+}
+.rstBox {
+  text-align: center;
+  margin: 0 12px;
+}
+.rstScore {
+  color: #00ffab;
+  font-size: 24px;
+}
+.rstDesc {
+  color: #6d6f7a;
+  font-size: 14px;
+}
+.rstWords {
+  margin-top: 50px;
+  font-size: 16px;
+  text-align: center;
+  overflow: auto;
+  white-space: break-spaces;
+  > * {
+    vertical-align: middle;
+  }
+}
+@media screen {
+  @media (max-width: 1024px) {
+    .boxContainer {
+      display: block;
+      padding: 0 20px;
+    }
+    .borderBox {
+      border-radius: 4px;
+    }
+  }
+}
